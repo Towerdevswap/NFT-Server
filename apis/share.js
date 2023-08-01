@@ -57,11 +57,11 @@ console.log('do return');
   <meta property="og:description" content="${collection.description}" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="og:image" content="${token.imageURL}" />
-  <meta property="og:url" content="https://openzoo.io/collection/${address}/${tokenid}" />
+  <meta property="og:url" content="https://localhost:300/collection/${address}/${tokenid}" />
   <meta property="twitter:image" content="${token.imageURL}" />
   </head>
   <body>
-  <meta http-equiv="refresh" content="0; url=https://openzoo.io/collection/${address}/${tokenid}" />
+  <meta http-equiv="refresh" content="0; url=https://localhost:300/collection/${address}/${tokenid}" />
   </body>
   </html>`);
 });

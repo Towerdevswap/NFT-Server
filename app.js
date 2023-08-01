@@ -28,8 +28,8 @@ require("./models/offer");
 require("./models/tradehistory");
 require("./models/auction");
 require("./models/erc1155holding");
-require("./models/banneduser");
-require("./models/bannenft");
+// require("./models/banneduser");
+// require("./models/bannenft");
 require("./models/bundle");
 require("./models/bundleauction");
 require("./models/bundlebid");
@@ -76,18 +76,18 @@ app.get('/image/:id', function(req, res){
   }
 });
 
-const priceFeed = require("./services/price.feed");
+// const priceFeed = require("./services/price.feed");
 
 const connect = () => {
   // const uri = process.env.DB_URL;
 
-  mongoose.connect('mongodb+srv://nanda:Rahmi%401000@cluster11.jr7sekq.mongodb.net/Local', { useNewUrlParser: true, useUnifiedTopology: true });
+  mongoose.connect('mongodb+srv://nanda:Rahmi%401000@cluster11.jr7sekq.mongodb.net/Marketplace', { useNewUrlParser: true, useUnifiedTopology: true });
   const db = mongoose.connection;
   db.on("error", console.error.bind(console, "connection error:"));
   db.once("open", function () {
     Logger.info("artion server has been connected to the db server");
     Logger.info("price feed has been started");
-    priceFeed.runPriceFeed();
+    // priceFeed.runPriceFeed();
     app.listen(port, () => {
       Logger.info(`artion server is running at port ${port}`);
     });

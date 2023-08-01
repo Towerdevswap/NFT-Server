@@ -10,7 +10,7 @@ router.use("/tradehistory", require("./tradehistory"));
 router.use("/notifications", require("./notification"));
 router.use("/erc721", require("./erc721"));
 router.use("/offer", require("./offer"));
-router.use("/ban", require("./ban"));
+// router.use("/ban", require("./ban"));
 router.use("/bundle", require("./bundle"));
 router.use("/marketplace", require("./marketplace"));
 router.use("/auction", require("./auction"));
